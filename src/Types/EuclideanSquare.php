@@ -9,7 +9,7 @@ use DivineOmega\Distance\Point;
  * Class Euclidean
  * @package DivineOmega\Distance\Types
  */
-class Euclidean extends EuclideanSquare implements TypeInterface
+class EuclideanSquare implements TypeInterface
 {
     /**
      * @param Point $a
@@ -18,8 +18,15 @@ class Euclidean extends EuclideanSquare implements TypeInterface
      */
     public function calculate(Point $a, Point $b)
     {
-        $distance = parent::calculate($a, $b);
-        $distance = sqrt($distance);
+        $dimensions = $a->getDimensions();
+        $aCoords = $a->getCoordinates();
+        $bCoords = $b->getCoordinates();
+
+        $distance = 0;
+
+        for($i = 0; $i < $dimensions; $i++) {
+            $distance += ($bCoords[$i] - $aCoords[$i]) ** 2;
+        }
 
         return $distance;
     }
