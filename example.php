@@ -6,7 +6,7 @@ use DivineOmega\Distance\Point;
 use DivineOmega\Distance\Distance;
 
 $a = new Point(1, 1);
-$b = new Point(1, 1);
+$b = new Point(1, 2);
 
 $distance = (new Distance())
     ->from($a)

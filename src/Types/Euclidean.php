@@ -25,10 +25,10 @@ class Euclidean implements TypeInterface
         $distance = 0;
 
         for($i = 0; $i < $dimensions; $i++) {
-            $distance += ($bCoords[$i] - $aCoords[$i]) ^ 2;
+            $distance += ($bCoords[$i] - $aCoords[$i]) ** 2;
         }
 
-        $distance = sqrt(abs($distance));
+        $distance = sqrt($distance);
 
         return $distance;
     }
