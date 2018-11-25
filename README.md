@@ -28,7 +28,7 @@ $distanceType = new EuclideanSquare();
 $distanceType = new Haversine();	# For GPS coordinates (latitude and longitude)
 
 $distance = (new Distance())
-		->type(new Euclidean())
+		->type(new Euclidean())	# Type is optional, and defaults to Euclidean distance
 		->from($a)
 		->to($b)
 		->get();
