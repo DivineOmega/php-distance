@@ -46,7 +46,7 @@ class Point
     {
         foreach ($this->coordinates as $coordinate) {
             if (!is_numeric($coordinate)) {
-                throw new \LogicException('Coordinate value must be numeric.');
+                throw new \InvalidArgumentException('Coordinate value must be numeric.');
             }
         }
     }

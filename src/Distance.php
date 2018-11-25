@@ -79,7 +79,7 @@ class Distance
     private function sanityCheck()
     {
         if ($this->from->getDimensions() !== $this->to->getDimensions()) {
-            throw new \LogicException('Points must have the same number of dimensions.');
+            throw new \InvalidArgumentException('Points must have the same number of dimensions.');
         }
     }
 }
