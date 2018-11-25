@@ -4,13 +4,13 @@ require_once __DIR__.'/vendor/autoload.php';
 
 use DivineOmega\Distance\Point;
 use DivineOmega\Distance\Distance;
-use DivineOmega\Distance\Types\Euclidean;
+use DivineOmega\Distance\Types\Haversine;
 
-$a = new Point(1, 1);
-$b = new Point(2, 2);
+$a = new Point(41.8350, 12.470);
+$b = new Point(41.9133741000, 12.5203944000);
 
 $distance = (new Distance())
-    ->type(new Euclidean())
+    ->type(new Haversine())
     ->from($a)
     ->to($b)
     ->get();
