@@ -1,0 +1,18 @@
+{
+    "name": "divineomega/php-distance",
+    "description": "Allows for calculation of many types of distance between points",
+    "type": "library",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@hall05.co.uk"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\Distance\\": "src/"
+        }
+    }
+}
