@@ -1,5 +1,7 @@
 # PHP Distance
 
+[![Build Status](https://travis-ci.org/DivineOmega/php-distance.svg?branch=master)](https://travis-ci.org/DivineOmega/php-distance)
+[![Coverage Status](https://coveralls.io/repos/github/DivineOmega/php-distance/badge.svg?branch=master)](https://coveralls.io/github/DivineOmega/php-distance?branch=master)
 [![Packagist](https://img.shields.io/packagist/dt/divineomega/php-distance.svg)](https://packagist.org/packages/divineomega/php-distance/stats)
 
 The PHP Distance library allows for calculation of many types of distance between points.
