@@ -12,9 +12,18 @@
     "require": {
         "php": ">=7.0.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
     "autoload": {
         "psr-4": {
             "DivineOmega\\Distance\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DivineOmega\\Distance\\Tests\\": "tests/"
         }
     }
 }
